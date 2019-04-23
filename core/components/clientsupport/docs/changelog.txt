@@ -1,5 +1,11 @@
 Changelog for ClientSupport.
 
+ClientSupport 1.1.0
+==============
+- Add 'custom_icon' system setting to allow custom icons for clientsupport button
+- Improve compatibility for modx3
+- Add 'Page URL' static field to popup form
+
 ClientSupport 1.0.0
 ==============
 - First public release

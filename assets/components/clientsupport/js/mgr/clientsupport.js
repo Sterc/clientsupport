@@ -55,11 +55,6 @@ ClientSupport.window.Support = function(config) {
             }
         },{
             xtype: 'textfield'
-            ,name: 'url'
-            ,hidden: true
-            ,value: window.location.href
-        },{
-            xtype: 'textfield'
             ,fieldLabel: _('clientsupport.name')
             ,name: 'name'
             ,anchor: '100%'
@@ -89,6 +84,14 @@ ClientSupport.window.Support = function(config) {
             ,style: {
                 paddingLeft: '165px'
             }
+        },{
+            xtype: 'statictextfield'
+            ,fieldLabel: _('clientsupport.url')
+            ,name: 'url'
+            ,value: window.location.href
+            ,anchor: '100%'
+            ,height: 'auto'
+            ,allowBlank: false
         },{
             xtype: 'textarea'
             ,fieldLabel: _('clientsupport.problem.message')

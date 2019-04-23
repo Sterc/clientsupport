@@ -1,0 +1,21 @@
+.brand-custom {
+    background-repeat: no-repeat !important;
+    background-size: 40px auto !important;
+    background-position: center center !important;
+}
+.brand-custom .icon-info-circle:before {
+    background: none !important;
+}
+
+.brand-zendesk {
+    background-image: url(../img/icon-zendesk-white-v2.svg) !important;
+}
+
+.brand-jira {
+    background-image: url(../img/icon-jira.svg) !important;
+}
+
+.brand-freshdesk {
+    background-image: url(../img/icon-freshdesk.png) !important;
+    background-size: 32px auto !important;
+}
