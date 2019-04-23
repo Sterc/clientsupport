@@ -3,7 +3,7 @@
     "lowCaseName": "clientsupport",
     "description": "Support/help form in MODX manager ",
     "author": "Joeke Kloosterman",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "package":{
         "menus": [{
             "text": "clientsupport.menu",
@@ -47,7 +47,12 @@
             "key": "ticket_system",
             "type": "clientsupport-combo-ticket-systems",
             "area": "general",
-            "value": "zendesk"
+            "value": ""
+        },{
+            "key": "custom_icon",
+            "type": "textfield",
+            "area": "general",
+            "value": ""
         }]
     },
     "build": {

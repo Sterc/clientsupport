@@ -17,7 +17,7 @@ $_lang['clientsupport.email'] = 'Uw e-mailadres';
 $_lang['clientsupport.problem'] = 'Probleem';
 $_lang['clientsupport.problem.label'] = 'Omschrijf in 1 korte zin wat het probleem is.';
 $_lang['clientsupport.problem.message'] = 'Omschrijving (optioneel)';
-$_lang['clientsupport.notice'] = 'Naast bovenstaande gegevens worden ook uw browser versie, pagina URL, gebruikersnaam en IP adres naar ons verstuurd.';
+$_lang['clientsupport.notice'] = 'Naast bovenstaande gegevens worden ook uw browser versie, gebruikersnaam en IP adres naar ons verstuurd.';
 $_lang['clientsupport.form.cancel'] = 'Annuleren';
 $_lang['clientsupport.form.submit'] = 'Versturen';
 $_lang['clientsupport.browser'] = 'Browser';
@@ -28,7 +28,7 @@ $_lang['clientsupport.ip_address'] = 'Gebruiker IP address';
 $_lang['clientsupport.email.subject'] = 'Clientsupport: [[+subject]]';
 $_lang['clientsupport.message_sent'] = 'Uw bericht is succesvol verstuurd.';
 
-//Settings
+// Settings
 $_lang['setting_clientsupport.email_to'] = 'Email-to address';
 $_lang['setting_clientsupport.email_to_desc'] = 'The emailaddress where the support form is sent to. Defaults to system setting "emailsender".';
 $_lang['setting_clientsupport.email_from'] = 'Email-from address';
@@ -39,3 +39,5 @@ $_lang['setting_clientsupport.email_tpl'] = 'Email tpl';
 $_lang['setting_clientsupport.email_tpl_desc'] = 'The chunk that is used for the support email.';
 $_lang['setting_clientsupport.ticket_system'] = 'Ticket system branding';
 $_lang['setting_clientsupport.ticket_system_desc'] = 'Choose the ticket system you\'re using. The ClientSupport form will be branded with the logo from the selected system';
+$_lang['setting_clientsupport.custom_icon'] = 'Custom icon';
+$_lang['setting_clientsupport.custom_icon_desc'] = 'Specify path to custom icon here. Path is relative to your base_path. This will override the ticket system branding logo.';
