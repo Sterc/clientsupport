@@ -1,0 +1,15 @@
+{
+    "name": "sterc/clientsupport",
+    "description": "ClientSupport is a MODX extra to allow manager users to ask for help or support from inside the MODX manager.",
+    "keywords": [
+        "MODX",
+        "Client Support"
+    ],
+    "type": "library",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Sterc\\ClientSupport\\": "src/"
+        }
+    }
+}
