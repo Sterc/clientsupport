@@ -1,0 +1,58 @@
+name: ClientSupport
+lowCaseName: clientsupport
+description: Support/help form in MODX manager.
+author: Sterc
+version: 3.0.0
+
+build:
+  setupOptions: "setup.options.php"
+  scriptsAfter: ["setupoptions.resolver.php", "stercextra.resolver.php"]
+
+menus:
+  - text: clientsupport.menu
+    description: clientsupport.menu_desc
+    action:
+    parent: usernav
+    icon: <i class="icon-info-circle icon icon-2x clientsupport-icon"></i>
+    params:
+    handler: ClientSupport.supportWindow(); return false;
+
+systemSettings:
+  - key: user_name
+    type: textfield
+    area: general
+    value:
+  - key: user_email
+    type: textfield
+    area: general
+    value:
+  - key: email_to
+    type: textfield
+    area: general
+    value:
+  - key: email_from
+    type: textfield
+    area: general
+    value:
+  - key: email_from_name
+    type: textfield
+    area: general
+    value:
+  - key: email_tpl
+    type: textfield
+    area: general
+    value:
+  - key: ticket_system
+    type: clientsupport-combo-ticket-systems
+    area: general
+    value:
+  - key: custom_icon
+    type: textfield
+    area: general
+    value:
+
+plugins:
+  - name: ClientSupport
+    description: ''
+    file: 'clientsupport.plugin.php'
+    events: ['OnManagerPageBeforeRender', 'OnDocFormRender']
