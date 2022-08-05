@@ -24,7 +24,6 @@ class ClientSupport
         $this->options = array_merge([
             'namespace'         => $this->namespace,
             'corePath'          => $corePath,
-            'modelPath'         => $corePath . 'model/',
             'processorsPath'    => $corePath . 'processors/',
             'chunksPath'        => $corePath . 'elements/chunks/',
             'snippetsPath'      => $corePath . 'elements/snippets/',
@@ -36,7 +35,6 @@ class ClientSupport
             'connectorUrl'      => $assetsUrl . 'connector.php'
         ], $options);
 
-        $this->modx->addPackage('clientsupport', $this->getOption('modelPath'));
         $this->modx->lexicon->load('clientsupport:default');
     }
 
