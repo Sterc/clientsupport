@@ -34,7 +34,7 @@ ClientSupport = new ClientSupport();
 ClientSupport.window.Support = function (config) {
     var ticket_system_logo = '';
     if (ClientSupport.config.ticket_system) {
-        ticket_system_logo = '<img src="'+ClientSupport.config.assetsUrl + 'img/logo_' + ClientSupport.config.ticket_system + '.jpg" />';
+        ticket_system_logo = '<img src="'+ClientSupport.config.assetsUrl + 'img/logo_' + 'sterc' + '.svg" />';
     }
 
     config = config || {};
