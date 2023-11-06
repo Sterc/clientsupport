@@ -47,8 +47,18 @@
     background-repeat: no-repeat;
 }
 
-.brand-zendesk .icon-info-circle:before {
+.brand-sterc .icon-info-circle:before {
     background-image: url(../img/icon-sterc.svg);
+    background-size: 45px 40px;
+}
+
+.brand-heibel .icon-info-circle:before {
+    background-image: url(../img/icon-heibel.svg);
+    background-size: 45px 40px;
+}
+
+.brand-zendesk .icon-info-circle:before {
+    background-image: url(../img/icon-zendesk.svg);
     background-size: 45px 40px;
 }
 

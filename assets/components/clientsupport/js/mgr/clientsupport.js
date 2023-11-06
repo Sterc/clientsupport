@@ -33,8 +33,17 @@ Ext.reg('clientsupport', ClientSupport);
 ClientSupport = new ClientSupport();
 ClientSupport.window.Support = function (config) {
     var ticket_system_logo = '';
+
     if (ClientSupport.config.ticket_system) {
-        ticket_system_logo = '<img src="'+ClientSupport.config.assetsUrl + 'img/logo_' + 'sterc' + '.svg" />';
+        ticket_system_logo = '<img src="'+ClientSupport.config.assetsUrl + 'img/logo_' + ClientSupport.config.ticket_system + '.jpg" />';
+
+        if(ClientSupport.config.ticket_system == 'sterc' || ClientSupport.config.ticket_system == 'heibel') {
+            ticket_system_logo = '<img src="'+ClientSupport.config.assetsUrl + 'img/logo_' + ClientSupport.config.ticket_system + '.svg" />';
+        }
+    }
+
+    if(ClientSupport.config.custom_icon){
+        ticket_system_logo = '<img src="'+ClientSupport.config.custom_icon + '" />';
     }
 
     config = config || {};
@@ -140,7 +149,9 @@ ClientSupport.combo.ticket_systems = function (config) {
                 ["", "None"],
                 ["zendesk", "Zendesk"],
                 ["freshdesk", "Freshdesk"],
-                ["jira", "JIRA"]
+                ["jira", "JIRA"],
+                ["sterc", "Sterc"],
+                ["heibel", "Heibel"]
             ],
             id: 0,
             fields: ["value", "text"]

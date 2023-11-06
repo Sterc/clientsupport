@@ -8,7 +8,15 @@
 }
 
 .brand-zendesk {
+    background-image: url(../img/icon-zendesk.svg) !important;
+}
+
+.brand-sterc {
     background-image: url(../img/icon-sterc.svg) !important;
+}
+
+.brand-heibel {
+    background-image: url(../img/icon-heibel.svg) !important;
 }
 
 .brand-jira {
