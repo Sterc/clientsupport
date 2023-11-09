@@ -2,7 +2,7 @@ name: ClientSupport
 lowCaseName: clientsupport
 description: Support/help form in MODX manager.
 author: Sterc
-version: 3.0.0
+version: 3.0.1
 
 build:
   setupOptions: "setup.options.php"
